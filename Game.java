@@ -120,10 +120,11 @@ public final class Game {
 
   public void showPlayersCards() {
     for (int i = 0; i < players.size(); i++) {
-      players.get(i).showHand();
+      players.get(i).printHand();
     }
   }
 
+  /* Deal community card. */
   private void dealCard() {
     Card newCard = deck.drawCard();
     if (newCard != null) {
@@ -131,6 +132,7 @@ public final class Game {
     }
   }
 
+  /* Deal card to specific player. */
   private void dealCard(int player) {
     Card newCard = deck.drawCard();
     if (newCard != null) {
