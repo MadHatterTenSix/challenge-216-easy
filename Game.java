@@ -30,6 +30,7 @@ public final class Game {
     int numberOfPlayers;
 
     /* Read number of players. */
+    players.clear();
     numberOfPlayers = 0;
     while (numberOfPlayers < MIN_PLAYERS || numberOfPlayers > MAX_PLAYERS) {
       System.out.print("How many players ("
