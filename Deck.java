@@ -57,7 +57,6 @@ public final class Deck {
     for (int i = 0; i < deck.size(); i++) {
       msg += "  " + deck.get(i).toString();
     }
-    msg += "\n";
     System.out.println(msg);
   }
 
