@@ -83,8 +83,11 @@ public final class Game {
 
   public void addPlayer(Player.Type type, String name) {
     String newName = name;
-    if (newName.equalsIgnoreCase("") && type == Player.Type.CPU) {
-      newName = "[CPU] Player " + (players.size() + 1);
+    if (!newName.equalsIgnoreCase("") && type == Player.Type.CPU) {
+      newName = "[CPU] " + newName;
+    }
+    else if (newName.equalsIgnoreCase("") && type == Player.Type.CPU) {
+      newName = "Player " + (players.size() + 1);
     }
     else if (newName.equalsIgnoreCase("") && type == Player.Type.HUMAN) {
       newName = "Player " + (players.size() + 1);
