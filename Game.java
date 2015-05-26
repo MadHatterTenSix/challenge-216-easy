@@ -87,7 +87,7 @@ public final class Game {
       newName = "[CPU] " + newName;
     }
     else if (newName.equalsIgnoreCase("") && type == Player.Type.CPU) {
-      newName = "Player " + (players.size() + 1);
+      newName = "[CPU] Player " + (players.size() + 1);
     }
     else if (newName.equalsIgnoreCase("") && type == Player.Type.HUMAN) {
       newName = "Player " + (players.size() + 1);
