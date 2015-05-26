@@ -56,7 +56,7 @@ public final class Game {
       dealCard(i);
       dealCard(i);
     }
-    showPlayersCards();
+    printPlayersCards();
     System.out.println();
 
     /* Flop */
@@ -65,19 +65,19 @@ public final class Game {
     dealCard();
     dealCard();
     dealCard();
-    showBoardCards();
+    printBoardCards();
 
     /* Turn */
     System.out.print("Turn:  ");
     deck.burnTopCard();
     dealCard();
-    showBoardCards();
+    printBoardCards();
 
     /* River */
     System.out.print("River: ");
     deck.burnTopCard();
     dealCard();
-    showBoardCards();
+    printBoardCards();
 
   }
 
@@ -110,7 +110,7 @@ public final class Game {
     }
   }
 
-  public void showBoardCards() {
+  public void printBoardCards() {
     String msg = "";
     for (int i = 0; i < boardCards.size(); i++) {
       msg += boardCards.get(i).toString() + "  ";
@@ -118,7 +118,7 @@ public final class Game {
     System.out.println(msg);
   }
 
-  public void showPlayersCards() {
+  public void printPlayersCards() {
     for (int i = 0; i < players.size(); i++) {
       players.get(i).printHand();
     }
