@@ -7,12 +7,12 @@
 
 public class Card {
 
-  public final String SUITS[] = {
+  public static final String SUITS[] = {
     "UNKNOWN_SUIT",
     "♥", "♣", "♦", "♠"
   };
 
-  public final String WORD_VALUES[] = {
+  public static final String WORD_VALUES[] = {
     "UNKNOWN_WORD_VALUE", /* 0 value is meaningless */
     "UNKNOWN_WORD_VALUE", /* 1 (ace) value moved to highest card */
     "2", "3", "4", "5",
