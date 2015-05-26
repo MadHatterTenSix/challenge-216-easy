@@ -43,7 +43,7 @@ public final class Game {
     addPlayer(Player.Type.HUMAN, "");
 
     /* Add CPU players. */
-    for (int i = 1; i < numberOfPlayers-1; i++) {
+    for (int i = 1; i < numberOfPlayers; i++) {
       addPlayer(Player.Type.CPU, "");
     }
 
@@ -96,10 +96,11 @@ public final class Game {
   }
 
   public void showBoardCards() {
+    String msg = "";
     for (int i = 0; i < boardCards.size(); i++) {
-      System.out.print("" + boardCards.get(i).toString() + "  ");
+      msg += boardCards.get(i).toString() + "  ";
     }
-    System.out.println();
+    System.out.println(msg);
   }
 
   public void showPlayersCards() {
