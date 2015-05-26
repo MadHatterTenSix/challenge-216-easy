@@ -63,7 +63,9 @@ public final class Game {
     /* Flop */
     System.out.print("Flop:  ");
     deck.burnTopCard();
-    for (int i = 0; i < 3; i++) { dealCard(); }
+    for (int i = 0; i < 3; i++) {
+      dealCard();
+    }
     printBoardCards();
 
     /* Turn */
