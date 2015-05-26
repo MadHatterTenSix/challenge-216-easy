@@ -95,6 +95,21 @@ public final class Game {
     players.add(new Player(type, newName));
   }
 
+  public void removePlayer(int id) {
+    if (id >= 0 && id < players.size()) {
+      players.remove(id);
+    }
+  }
+
+  public void removePlayer(String name) {
+    for (int i = 0; i < players.size(); i++) {
+      if (players.get(i).getName().equalsIgnoreCase(name)) {
+        players.remove(i);
+        break;
+      }
+    }
+  }
+
   public void showBoardCards() {
     String msg = "";
     for (int i = 0; i < boardCards.size(); i++) {
