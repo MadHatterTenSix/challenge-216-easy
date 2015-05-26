@@ -5,7 +5,7 @@
 
 /* Card.java */
 
-public class Card {
+public final class Card {
 
   public static final String SUITS[] = {
     "UNKNOWN_SUIT",
