@@ -5,7 +5,7 @@
 
 /* TexasHoldem.java */
 
-public class TexasHoldEm {
+public final class TexasHoldEm {
 
   public static void main(String[] args) {
     Game game = new Game();
