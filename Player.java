@@ -33,17 +33,26 @@ public final class Player {
   public ArrayList<Card> getHand()
     { return hand; }
 
+  public int getNumberOfCards()
+    { return hand.size(); }
+
   public void receiveCard(Card card) {
     if (card != null) {
       hand.add(card);
     }
   }
 
-  public void showHand() {
-    String msg = name + "'s cards: ";
+  public String handToString() {
+    String s = "";
     for (int i = 0; i < hand.size(); i++) {
-      msg += hand.get(i).toString() + "  ";
+      s += hand.get(i).toString() + "  ";
     }
+    return s;
+  }
+
+  public void printHand() {
+    String msg = name + "'s cards: ";
+    msg += handToString();
     System.out.println(msg);
   }
 
