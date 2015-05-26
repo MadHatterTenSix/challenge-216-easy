@@ -40,11 +40,11 @@ public class Player {
   }
 
   public void showHand() {
-    System.out.print("" + name + "'s cards: ");
+    String msg = name + "'s cards: ";
     for (int i = 0; i < hand.size(); i++) {
-      System.out.print("" + hand.get(i).toString() + "  ");
+      msg += hand.get(i).toString() + "  ";
     }
-    System.out.println("");
+    System.out.println(msg);
   }
 
 }
