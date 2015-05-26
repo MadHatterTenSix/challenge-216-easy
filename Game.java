@@ -8,7 +8,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Game {
+public final class Game {
 
   private final int MIN_PLAYERS = 2;
   private final int MAX_PLAYERS = 8;
