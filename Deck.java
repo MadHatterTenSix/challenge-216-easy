@@ -53,10 +53,12 @@ public final class Deck {
   }
 
   public void print() {
-    System.out.println("Cards in deck:");
+    String msg = "Cards in deck: \n";
     for (int i = 0; i < deck.size(); i++) {
-      System.out.println("  " + deck.get(i).toString());
+      msg += "  " + deck.get(i).toString();
     }
+    msg += "\n";
+    System.out.println(msg);
   }
 
   public void shuffle() {
