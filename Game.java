@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public final class Game {
 
-  private final int MIN_PLAYERS = 2;
-  private final int MAX_PLAYERS = 8;
+  private static final int MIN_PLAYERS = 2;
+  private static final int MAX_PLAYERS = 8;
 
   private Deck deck;
   private ArrayList<Player> players;  /* this list includes CPU players */
